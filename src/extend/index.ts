@@ -4,12 +4,14 @@ import {extendAccounts} from "./accounts";
 import {extendContracts} from "./contracts";
 import {extendFormatters} from "./formatters";
 import {extendMethods} from "./methods";
+import {extendSubscribe} from "./subscribe";
 
 const extend = function(web3: any) {
   extendAccounts(web3);
   extendFormatters(web3);
   extendMethods(web3);
   extendContracts(web3);
+  extendSubscribe(web3);
 };
 
 export {
